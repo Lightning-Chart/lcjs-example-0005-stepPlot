@@ -72,12 +72,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/chartxy.html
-[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/individualpointfill.html
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/chartxy.html
+[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/individualpointfill.html
 [ProgressiveRandomGenerator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
-[StepOptions]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/enums/stepoptions.html
-[UIBackgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#uibackgrounds
-[UIButtonPictures]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#uibuttonpictures
-[UIElementBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#uielementbuilders
-[UILayoutBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#uilayoutbuilders
-[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#uiorigins
+[StepOptions]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/enums/stepoptions.html
+[UIBackgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#uibackgrounds
+[UIButtonPictures]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#uibuttonpictures
+[UIElementBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#uielementbuilders
+[UILayoutBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#uilayoutbuilders
+[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#uiorigins
