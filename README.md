@@ -1,4 +1,4 @@
-# Step series
+# Step Series
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -14,7 +14,8 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
 
-### Description 
+
+## Description
 
 *Also known as a Step Graph or Step Chart*
 
@@ -39,20 +40,21 @@ There is no need in data preparation, step chart will be generated automatically
 
 The series accepts points in format `{ x: number, y: number: color: Color }` with specified IndividualPointFill to enable individual point coloring or `{ x: number, y: number }` for other fill styles. Any number of points can be added with a single call similarly to line series with point markers.
 
-### API links
 
-* XY cartesian chart: [ChartXY][]
-* Step options: [StepOptions][]
-* Individual point coloring: [IndividualPointFill][]
-* UI layout builders: [UILayoutBuilders][]
-* UI backgrounds: [UIBackgrounds][]
-* UI elements builders: [UIElementBuilders][]
-* UI button pictures: [UIButtonPictures][]
-* UI position origins: [UIOrigins][]
-* Progressive random generator: [ProgressiveRandomGenerator][]
+## API Links
+
+* XY cartesian chart: [ChartXY]
+* Step options: [StepOptions]
+* Individual point coloring: [IndividualPointFill]
+* UI layout builders: [UILayoutBuilders]
+* UI backgrounds: [UIBackgrounds]
+* UI elements builders: [UIElementBuilders]
+* UI button pictures: [UIButtonPictures]
+* UI position origins: [UIOrigins]
+* Progressive random generator: [ProgressiveRandomGenerator]
 
 
-### Support
+## Support
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
@@ -64,20 +66,22 @@ If you think you found a bug in the LightningChart JavaScript library, please co
 
 Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
 
-© Arction Ltd 2009-2019. All rights reserved.
-
 [0]: https://github.com/Arction/
 [1]: https://www.arction.com/lightningchart-js-api-documentation/
 [2]: https://www.arction.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/chartxy.html
-[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/individualpointfill.html
+© Arction Ltd 2009-2019. All rights reserved.
+
+
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
+[StepOptions]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/enums/stepoptions.html
+[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/individualpointfill.html
+[UILayoutBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uilayoutbuilders
+[UIBackgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uibackgrounds
+[UIElementBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uielementbuilders
+[UIButtonPictures]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uibuttonpictures
+[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uiorigins
 [ProgressiveRandomGenerator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
-[StepOptions]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/enums/stepoptions.html
-[UIBackgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#uibackgrounds
-[UIButtonPictures]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#uibuttonpictures
-[UIElementBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#uielementbuilders
-[UILayoutBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#uilayoutbuilders
-[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#uiorigins
+

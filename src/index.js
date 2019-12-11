@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that showcases step-series with dynamically changeable stepping-options.
  */
 // Import LightningChartJS
