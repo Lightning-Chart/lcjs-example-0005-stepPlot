@@ -77,13 +77,13 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
-[StepOptions]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/enums/stepoptions.html
-[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/individualpointfill.html
-[UILayoutBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uilayoutbuilders
-[UIBackgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uibackgrounds
-[UIElementBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uielementbuilders
-[UIButtonPictures]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uibuttonpictures
-[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uiorigins
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
+[StepOptions]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/enums/stepoptions.html
+[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/individualpointfill.html
+[UILayoutBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uilayoutbuilders
+[UIBackgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uibackgrounds
+[UIElementBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uielementbuilders
+[UIButtonPictures]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uibuttonpictures
+[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uiorigins
 [ProgressiveRandomGenerator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
 
