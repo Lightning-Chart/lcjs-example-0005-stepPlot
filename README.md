@@ -45,15 +45,15 @@ The series accepts points in format `{ x: number, y: number: color: Color }` wit
 
 ## API Links
 
-* XY cartesian chart: [ChartXY]
-* Step options: [StepOptions]
-* Individual point coloring: [IndividualPointFill]
-* UI layout builders: [UILayoutBuilders]
-* UI backgrounds: [UIBackgrounds]
-* UI elements builders: [UIElementBuilders]
-* UI button pictures: [UIButtonPictures]
-* UI position origins: [UIOrigins]
-* Progressive random generator: [ProgressiveRandomGenerator]
+* [XY cartesian chart]
+* [Step options]
+* [Individual point coloring]
+* [UI layout builders]
+* [UI backgrounds]
+* [UI elements builders]
+* [UI button pictures]
+* [UI position origins]
+* [Progressive random generator]
 
 
 ## Support
@@ -77,13 +77,13 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
-[StepOptions]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/enums/stepoptions.html
-[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/individualpointfill.html
-[UILayoutBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uilayoutbuilders
-[UIBackgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uibackgrounds
-[UIElementBuilders]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uielementbuilders
-[UIButtonPictures]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uibuttonpictures
-[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uiorigins
-[ProgressiveRandomGenerator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/chartxy.html
+[Step options]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/enums/stepoptions.html
+[Individual point coloring]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/individualpointfill.html
+[UI layout builders]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#uilayoutbuilders
+[UI backgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#uibackgrounds
+[UI elements builders]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#uielementbuilders
+[UI button pictures]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#uibuttonpictures
+[UI position origins]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#uiorigins
+[Progressive random generator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
 

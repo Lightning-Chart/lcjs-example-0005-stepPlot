@@ -15,19 +15,17 @@ const {
     UIOrigins,
     emptyFill,
     emptyLine,
-    emptyTick
+    AxisTickStrategies,
+    SolidFill,
+    Themes
 } = lcjs
 
-const chart = lightningChart().ChartXY().setTitle('Survey Report')
+const chart = lightningChart().ChartXY({
+    // theme: Themes.dark
+}).setTitle('Survey Report')
 
 const reportTableXlabel = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
     'August', 'September', 'October', 'November', 'December']
-
-// X-axis of the series
-const xAxis = chart.getDefaultAxisX()
-    .setMouseInteractions(false)
-    // Disable default ticks.
-    .setTickStyle(emptyTick)
 
 // Create step series for each available step-option.
 // The step-function can not be changed during runtime!
@@ -53,7 +51,7 @@ addSeries(StepOptions.after)
 const axisX = chart.getDefaultAxisX()
     .setMouseInteractions(false)
     // Disable default ticks.
-    .setTickStyle(emptyTick)
+    .setTickStrategy(AxisTickStrategies.Empty)
 
 // Enable AutoCursor auto-fill.
 chart.setAutoCursor(cursor => {
@@ -108,6 +106,7 @@ changedData.forEach((_, index) => {
                 .setFillStyle(emptyFill)
                 .setStrokeStyle(emptyLine)
             )
+            .setTextFillStyle(new SolidFill())
         )
     x += 1
 })
