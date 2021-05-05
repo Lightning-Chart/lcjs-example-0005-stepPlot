@@ -36,7 +36,7 @@ const addSeries = (stepOption) =>
             // Show identifier of stepping option as the name of the Series.
             .setName(StepOptions[stepOption])
             .dispose()
-            .setResultTableFormatter((builder, _, xValue, yValue) =>
+            .setCursorResultTableFormatter((builder, _, xValue, yValue) =>
                 builder
                     .addRow('Survey Report')
                     .addRow('Month: ' + reportTableXlabel[Math.trunc(xValue)])
@@ -97,17 +97,10 @@ stepSeries.forEach((values, i) => {
 
 changedData.forEach((_, index) => {
     // Add custom tick, more like categorical axis.
-    axisX.addCustomTick()
+    axisX.addCustomTick(UIElementBuilders.AxisTick)
         .setValue(index)
         .setGridStrokeLength(0)
         .setTextFormatter((_) => data[index].x)
-        .setMarker((marker) => marker
-            .setBackground((background) => background
-                .setFillStyle(emptyFill)
-                .setStrokeStyle(emptyLine)
-            )
-            .setTextFillStyle(new SolidFill())
-        )
     x += 1
 })
 chart.getDefaultAxisY()
