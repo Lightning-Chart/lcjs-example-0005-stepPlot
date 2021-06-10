@@ -1,6 +1,6 @@
-# Step Series
+# JavaScript Step Series
 
-![Step Series](stepPlot.png)
+![JavaScript Step Series](stepPlot.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
