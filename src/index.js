@@ -11,17 +11,13 @@ const {
     UILayoutBuilders,
     UIElementBuilders,
     UIButtonPictures,
-    UIBackgrounds,
     UIOrigins,
-    emptyFill,
-    emptyLine,
     AxisTickStrategies,
-    SolidFill,
     Themes
 } = lcjs
 
 const chart = lightningChart().ChartXY({
-    // theme: Themes.dark
+    // theme: Themes.darkGold
 }).setTitle('Survey Report')
 
 const reportTableXlabel = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -109,7 +105,7 @@ chart.getDefaultAxisY()
 
 // Add UI controls for switching between step-mode-options.
 // NOTE: This is not the focus of the example, and will be better covered elsewhere.
-const stepControls = chart.addUIElement(UILayoutBuilders.Column.setBackground(UIBackgrounds.Rectangle))
+const stepControls = chart.addUIElement(UILayoutBuilders.Column)
 stepControls.addElement(UIElementBuilders.TextBox)
     .setText('Step options')
 const buttonLayout = stepControls.addElement(UILayoutBuilders.Row)
