@@ -77,13 +77,13 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/chartxy.html
-[Step options]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/enums/stepoptions.html
-[Individual point coloring]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/individualpointfill.html
-[UI layout builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#uilayoutbuilders
-[UI backgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#uibackgrounds
-[UI elements builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#uielementbuilders
-[UI button pictures]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#uibuttonpictures
-[UI position origins]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#uiorigins
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/chartxy.html
+[Step options]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/enums/stepoptions.html
+[Individual point coloring]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/individualpointfill.html
+[UI layout builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#uilayoutbuilders
+[UI backgrounds]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#uibackgrounds
+[UI elements builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#uielementbuilders
+[UI button pictures]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#uibuttonpictures
+[UI position origins]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#uiorigins
 [Progressive random generator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
 
