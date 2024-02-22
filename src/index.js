@@ -5,7 +5,7 @@
 const lcjs = require('@arction/lcjs')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, StepOptions, UILayoutBuilders, UIElementBuilders, UIButtonPictures, UIOrigins, AxisTickStrategies, Themes } = lcjs
+const { lightningChart, StepOptions, UILayoutBuilders, UIElementBuilders, emptyFill, UIOrigins, AxisTickStrategies, Themes } = lcjs
 
 const chart = lightningChart()
     .ChartXY({
@@ -34,7 +34,7 @@ const stepSeries = []
 const addSeries = (stepOption) =>
     stepSeries.push(
         chart
-            .addStepSeries({ mode: stepOption })
+            .addStepSeries({ mode: stepOption, automaticColorIndex: 0 })
             // Show identifier of stepping option as the name of the Series.
             .setName(StepOptions[stepOption])
             .setVisible(false)
@@ -139,33 +139,33 @@ stepControls.addElement(UIElementBuilders.TextBox).setText('Step options')
 const buttonLayout = stepControls.addElement(UILayoutBuilders.Row)
 const radioButtons = []
 let switching = false
-const radioButtonBuilder = UIElementBuilders.CheckBox.setPictureOff(UIButtonPictures.Rectangle)
-    .setPictureOn(UIButtonPictures.Diamond)
-    .addStyler((checkBox) => {
-        radioButtons.push(checkBox)
-        checkBox.setOn(false).setPadding({ left: 10, bottom: 5 })
-        // Add radio button logic immediately afterwards so that it is applied after plot.
-        // Attach logic (otherwise plot logic will override this)
-        setTimeout(() => {
-            checkBox.onSwitch((activatedButton, state) => {
-                if (switching) {
-                    return
-                }
-                switching = true
-                if (state) {
-                    // Deactivate other buttons
-                    for (const button of radioButtons) if (button !== activatedButton) button.setOn(false)
-                } else {
-                    // Prevent turning of the selected option
-                    activatedButton.setOn(true)
-                }
-                switching = false
-            })
-        }, 100)
-    })
-stepSeries[0].attach(buttonLayout.addElement(radioButtonBuilder))
-stepSeries[1].attach(buttonLayout.addElement(radioButtonBuilder))
-stepSeries[2].attach(buttonLayout.addElement(radioButtonBuilder))
+const addRadioButton = (series) => {
+    const checkBox = buttonLayout.addElement(UIElementBuilders.CheckBox).setButtonOnFillStyle(emptyFill).setButtonOffFillStyle(emptyFill)
+    radioButtons.push(checkBox)
+    series.attach(checkBox)
+    checkBox.setOn(false)
+    // Add radio button logic immediately afterwards so that it is applied after plot.
+    // Attach logic (otherwise plot logic will override this)
+    setTimeout(() => {
+        checkBox.onSwitch((activatedButton, state) => {
+            if (switching) {
+                return
+            }
+            switching = true
+            if (state) {
+                // Deactivate other buttons
+                for (const button of radioButtons) if (button !== activatedButton) button.setOn(false)
+            } else {
+                // Prevent turning of the selected option
+                activatedButton.setOn(true)
+            }
+            switching = false
+        })
+    }, 100)
+}
+addRadioButton(stepSeries[0])
+addRadioButton(stepSeries[1])
+addRadioButton(stepSeries[2])
 const margin = 10
 stepControls.setPosition({ x: 30, y: 80 }).setOrigin(UIOrigins.CenterBottom).setMargin(margin)
 
