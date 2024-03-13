@@ -9,7 +9,7 @@ const { lightningChart, StepOptions, UILayoutBuilders, UIElementBuilders, emptyF
 
 const chart = lightningChart()
     .ChartXY({
-        // theme: Themes.darkGold
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Survey Report')
 
