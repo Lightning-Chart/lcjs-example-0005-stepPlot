@@ -2,7 +2,7 @@
  * LightningChartJS example that showcases step-series with dynamically changeable stepping-options.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, StepOptions, UILayoutBuilders, UIElementBuilders, emptyFill, UIOrigins, AxisTickStrategies, Themes } = lcjs
@@ -15,21 +15,6 @@ const chart = lightningChart({
     })
     .setTitle('Survey Report')
 
-const reportTableXlabel = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-]
-
 // Create step series for each available step-option.
 // The step-function can not be changed during runtime!
 const stepSeries = []
@@ -39,13 +24,7 @@ const addSeries = (stepOption) =>
             .addStepSeries({ mode: stepOption, automaticColorIndex: 0 })
             // Show identifier of stepping option as the name of the Series.
             .setName(StepOptions[stepOption])
-            .setVisible(false)
-            .setCursorResultTableFormatter((builder, _, xValue, yValue) =>
-                builder
-                    .addRow('Survey Report')
-                    .addRow('Month: ' + reportTableXlabel[Math.trunc(xValue)])
-                    .addRow('Amount: ' + yValue.toFixed(2)),
-            ),
+            .setVisible(false),
     )
 addSeries(StepOptions.before)
 addSeries(StepOptions.middle)
@@ -58,11 +37,6 @@ const axisX = chart
     // Disable default ticks.
     .setTickStrategy(AxisTickStrategies.Empty)
     .setMouseInteractions(false)
-
-// Enable AutoCursor auto-fill.
-chart.setAutoCursor((cursor) => {
-    cursor.setResultTableAutoTextStyle(true).setTickMarkerXVisible(false).setTickMarkerYAutoTextStyle(true)
-})
 
 // Generate progressive points and add it to every series.
 const data = [
