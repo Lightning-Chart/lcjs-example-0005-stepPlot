@@ -5,7 +5,7 @@
 const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, StepOptions, UILayoutBuilders, UIElementBuilders, emptyFill, UIOrigins, AxisTickStrategies, Themes } = lcjs
+const { lightningChart, UILayoutBuilders, UIElementBuilders, emptyFill, UIOrigins, AxisTickStrategies, Themes } = lcjs
 
 const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
@@ -15,28 +15,25 @@ const chart = lightningChart({
     })
     .setTitle('Survey Report')
 
-// Create step series for each available step-option.
-// The step-function can not be changed during runtime!
 const stepSeries = []
-const addSeries = (stepOption) =>
+const addSeries = (step) =>
     stepSeries.push(
         chart
-            .addStepSeries({ mode: stepOption, automaticColorIndex: 0 })
-            // Show identifier of stepping option as the name of the Series.
-            .setName(StepOptions[stepOption])
-            .setVisible(false),
+            .addPointLineAreaSeries({ dataPattern: 'ProgressiveX', automaticColorIndex: 0 })
+            .setName(step)
+            .setVisible(false)
+            .setCurvePreprocessing({ type: 'step', step })
+            .setAreaFillStyle(emptyFill),
     )
-addSeries(StepOptions.before)
-addSeries(StepOptions.middle)
-addSeries(StepOptions.after)
+addSeries('before')
+addSeries('middle')
+addSeries('after')
 
 // X-axis of the series
 const axisX = chart
     .getDefaultAxisX()
-    .setMouseInteractions(false)
     // Disable default ticks.
     .setTickStrategy(AxisTickStrategies.Empty)
-    .setMouseInteractions(false)
 
 // Generate progressive points and add it to every series.
 const data = [
@@ -123,21 +120,18 @@ const addRadioButton = (series) => {
     // Add radio button logic immediately afterwards so that it is applied after plot.
     // Attach logic (otherwise plot logic will override this)
     setTimeout(() => {
-        checkBox.onSwitch((activatedButton, state) => {
-            if (switching) {
+        checkBox.addEventListener('switch', (event) => {
+            const state = event.state
+            if (switching || !state) {
                 return
             }
-            switching = true
-            if (state) {
-                // Deactivate other buttons
-                for (const button of radioButtons) if (button !== activatedButton) button.setOn(false)
-            } else {
-                // Prevent turning of the selected option
-                activatedButton.setOn(true)
-            }
-            switching = false
+            // Deactivate other buttons
+            for (const button of radioButtons) if (button !== checkBox) button.setOn(false)
         })
     }, 100)
+    series.addEventListener('visiblechange', (e) => {
+        checkBox.setPointerEvents(!e.isVisible)
+    })
 }
 addRadioButton(stepSeries[0])
 addRadioButton(stepSeries[1])
