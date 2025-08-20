@@ -75,16 +75,16 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://lightningchart.com/support-services/
 
-© LightningChart Ltd 2009-2022. All rights reserved.
+© LightningChart Ltd 2009-2025. All rights reserved.
 
 
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/ChartXY.html
-[Step options]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/enums/StepOptions.html
-[Individual point coloring]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/IndividualPointFill.html
-[UI layout builders]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/UILayoutBuilders.html
-[UI backgrounds]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/UIBackgrounds.html
-[UI elements builders]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/UIElementBuilders.html
-[UI button pictures]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/UIButtonPictures.html
-[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/UIOrigins.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/ChartXY.html
+[Step options]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/enums/StepOptions.html
+[Individual point coloring]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/IndividualPointFill.html
+[UI layout builders]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UILayoutBuilders.html
+[UI backgrounds]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UIBackgrounds.html
+[UI elements builders]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UIElementBuilders.html
+[UI button pictures]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UIButtonPictures.html
+[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UIOrigins.html
 [Progressive random generator]: https://lightning-chart.github.io/xydata/classes/progressiverandomgenerator.html
 
