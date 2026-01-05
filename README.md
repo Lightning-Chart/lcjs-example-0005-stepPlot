@@ -25,7 +25,7 @@ This example shows the basic usage of a step series with different preprocessing
 
 The data that changes at irregular intervals remains constant between the changes. The vertical risers of a chart denote changes in the data and their magnitude, the horizontal - the constancy of the data within the interval.
 
-![](./assets/comparison.png 'Line Chart vs. Step Chart')
+![Line chart vs step chart](./assets/comparison.png 'Line Chart vs. Step Chart')
 
 Creation of a step series is equal to any basic line series, with the exception of an additional optional parameter, which specifies the 'step option' of the series.
 
